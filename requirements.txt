@@ -1,1 +1,8 @@
 streamlit
+langchain-groq
+langchain_core 
+langgraph
+langsmith
+langchain
+langchain_community
+pytest
