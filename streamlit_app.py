@@ -180,7 +180,7 @@ async def run_workflow_async(state_machine, workflow_state):
     
 def initialize_workflow(api_key):
     try:
-        model = ChatGroq(temperature=0.3, groq_api_key=api_key, model="llama-3.1-70b-versatile", request_timeout=60) # Or your LLM
+        model = ChatGroq(temperature=0.3, groq_api_key=api_key, model="llama-3.3-70b-versatile", request_timeout=60) # Or your LLM
         workflow = create_copywriting_workflow(model)
         return workflow
     except Exception as e:  # Handle any exceptions during workflow initialization
